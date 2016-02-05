@@ -11,6 +11,10 @@ The tool primarily uses the remote control features of the Overture interpreter
 and in combination with a special control class called
 `org.overture.guibuilder.GuiBuilderRemote`. 
 
+The `src` folder and `pom.xml` integrate the main GUI Builder into the Overture
+code base.  The `ide` folder contains projects to further integrate it into the
+Eclipse-based Overture IDE.
+
 In order to use the tool, a jar that provides the GUI Builder is necessary.
 That jar can be built by invoking `mvn assembly:single` on this module. Be sure
 to grab the one named `custom-dependencies`.
@@ -19,6 +23,7 @@ For more information about the original GUI Builder tool see:
 Nunes, C., & Paiva, A. (2011, October). Automatic Generation of Graphical User
 Interfaces From VDM++ Specifications. In ICSEA 2011, The Sixth International
 Conference on Software Engineering Advances.
+
 
 ## Known Issues:
 VDM-SL models are not supported
